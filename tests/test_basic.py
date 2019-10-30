@@ -30,8 +30,8 @@ def test_put_get_delete(s3_connection):
     assert not data2
 
 
-def test_non_exist_key(s3_connection):
-    """Test fetching a non-existent key is handled correctly"""
+def test_get_non_exist_key(s3_connection):
+    """Test fetching a non-existent key is handled correctly (empty return set)"""
     data = s3_connection.get('this-will-not-exist')
     assert not data
 
