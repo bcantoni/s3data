@@ -5,7 +5,7 @@ import json
 
 class S3Data:
     def __init__(self, aws_access_key, aws_secret_access_key, bucket):
-        """Initialize S3 connection given access/secret keys"""
+        """Initialize S3 connection given access/secret keys and bucket name"""
         self.s3 = boto3.resource("s3",
                                  aws_access_key_id=aws_access_key,
                                  aws_secret_access_key=aws_secret_access_key)
