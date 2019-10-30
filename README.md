@@ -6,11 +6,13 @@ This is a simple wrapper for a specific use case of S3 using the [Amazon AWS SDK
 
 ## Prerequisites
 
+Only Python 3.6 and up are tested. Virtual environment is recommended to make your life easier.
+
 This package is not installed to PyPI but instead can be directly installed from Github:
 
     pip install -e git://github.com/bcantoni/s3data.git#egg=s3data
 
-In AWS S3, create a new bucket and an IAM user (with access key and secret) which only has access to that specific bucket. (Note: if you have an existing S3 bucket that will also work, but I intentionally wanted to isolate this one out of caution.)
+In AWS S3, create a new bucket and an IAM user (with access key and secret) which only has access to that specific bucket. Note: if you have an existing S3 bucket that will also work, but I intentionally wanted to isolate this one out of caution.
 
 Set all of the above values into environment variables:
 
