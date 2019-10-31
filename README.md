@@ -2,6 +2,8 @@
 
 Simple persistent object storage for AWS S3
 
+![](https://github.com/bcantoni/s3data/workflows/Python%20package/badge.svg)
+
 This is a simple wrapper for a specific use case of S3 using the [Amazon AWS SDK for Python Boto3](https://aws.amazon.com/sdk-for-python/). The use case is to create a persistent object store for a simple data dictionary. It could be used for anything, but in my case I'm using it to store data between test runs for CI systems like GitHub Actions.
 
 ## Prerequisites
