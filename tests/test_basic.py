@@ -42,7 +42,7 @@ def test_invalid_access():
         s3 = s3data.S3Data('09871304987304897028370',
                            os.environ['AWS_SECRET_ACCESS_KEY'],
                            os.environ['S3DATA_BUCKET'])
-        s3.get('this-will-not-exist')
+        s3.get('invalid-access-key-test')
 
 
 def test_invalid_secret():
@@ -51,7 +51,7 @@ def test_invalid_secret():
         s3 = s3data.S3Data(os.environ['AWS_ACCESS_KEY_ID'],
                            'a;lksdjf;ljsdflkjadslfj;ldasjf;jd;fl',
                            os.environ['S3DATA_BUCKET'])
-        s3.get('this-will-not-exist')
+        s3.get('invalid-secret-test')
 
 
 def test_invalid_bucket():
@@ -60,4 +60,4 @@ def test_invalid_bucket():
         s3 = s3data.S3Data(os.environ['AWS_ACCESS_KEY_ID'],
                            os.environ['AWS_SECRET_ACCESS_KEY'],
                            'bucket-name-not-exist-asdfasdfasdfasdfsadfasdfadf')
-        s3.get('this-will-not-exist')
+        s3.get('invalid-bucket-name-test')
