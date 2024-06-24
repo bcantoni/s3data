@@ -8,7 +8,7 @@ This is a simple wrapper for a specific use case of S3 using the [Amazon AWS SDK
 
 ## Prerequisites
 
-Only Python 3.6 and up are tested. Virtual environment is recommended to make your life easier.
+Python currently-support Python versions are supported. See the `unittests.yml` workflow file for the latest. A virtual environment is recommended to make your life easier.
 
 This package is not installed to PyPI but instead can be directly installed from Github:
 
