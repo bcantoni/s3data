@@ -2,13 +2,13 @@
 
 Simple persistent object storage for AWS S3
 
-[![Github badge icon](https://github.com/bcantoni/s3data/workflows/Python%20package/badge.svg)](https://github.com/bcantoni/s3data/actions?query=workflow%3A%22Python+package%22)
+[![GitHub badge icon](https://github.com/bcantoni/s3data/workflows/Unit%20tests/badge.svg)](https://github.com/bcantoni/s3data/actions/workflows/unittests.yml)
 
 This is a simple wrapper for a specific use case of S3 using the [Amazon AWS SDK for Python Boto3](https://aws.amazon.com/sdk-for-python/). The use case is to create a persistent object store for a simple data dictionary. It could be used for anything, but in my case I'm using it to store data between test runs for CI systems like GitHub Actions.
 
 ## Prerequisites
 
-Only Python 3.6 and up are tested. Virtual environment is recommended to make your life easier.
+Python currently-support Python versions are supported. See the `unittests.yml` workflow file for the latest. A virtual environment is recommended to make your life easier.
 
 This package is not installed to PyPI but instead can be directly installed from Github:
 
