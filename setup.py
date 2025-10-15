@@ -17,7 +17,7 @@ setup(
     name='s3data',
     version=version,
     install_requires=requirements,
-    python_requires='~=3.6',
+    python_requires='~=3.11',
     author='Brian Cantoni',
     author_email='brian@cantoni.org',
     packages=find_packages(exclude=('tests', 'docs')),
